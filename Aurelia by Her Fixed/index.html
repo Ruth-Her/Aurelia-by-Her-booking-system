@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurelia by Her</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f9f9f9; color: #333; }
+    .header { text-align: center; padding: 50px 20px; background: #1a1a1a; color: white; }
+    .header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 1px; }
+    .header p { margin: 10px 0 0; opacity: 0.9; }
+    .rooms { display: flex; flex-wrap: wrap; justify-content: center; gap: 25px; padding: 50px 20px; max-width: 1200px; margin: 0 auto; }
+    .room { background: white; border-radius: 10px; width: 320px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); overflow: hidden; }
+    .room img { width: 100%; height: 220px; object-fit: cover; }
+    .room-info { padding: 20px; }
+    .room-info h3 { margin: 0 0 10px; color: #1a1a1a; }
+    .price { color: #c49b63; font-weight: bold; font-size: 20px; margin: 15px 0; }
+    .book-room-btn { display: block; background: #25D366; color: white; padding: 12px; border-radius: 6px; text-decoration: none; text-align: center; font-weight: bold; margin-top: 10px; }
+    .book-room-btn:hover { background: #1da851; }
+    .booking { max-width: 500px; margin: 20px auto 20px; background: white; padding: 35px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+    .booking h2 { text-align: center; margin: 0 0 10px; color: #1a1a1a; }
+    .booking p { text-align: center; color: #666; margin: 0 0 25px; font-size: 14px; }
+    .contact-options { max-width: 500px; margin: 0 auto 60px; background: white; padding: 35px; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); text-align: center; }
+    .contact-options h2 { margin: 0 0 15px; color: #1a1a1a; }
+    .call-btn { display: inline-block; background: #1a1a1a; color: white; padding: 14px 25px; border-radius: 6px; text-decoration: none; font-weight: bold; margin-top: 10px; }
+    .call-btn:hover { background: #333; }
+    input, select { width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; font-size: 16px; }
+    button { width: 100%; padding: 14px; background: #1a1a1a; color: white; border: none; border-radius: 6px; cursor: pointer; font-size: 16px; margin-top: 10px; }
+    button:hover { background: #333; }
+    .divider { text-align: center; margin: 30px auto; color: #888; font-weight: bold; }
+    .footer { background: #1a1a1a; color: white; padding: 40px 20px; text-align: center; margin-top: 40px; }
+    .footer h3 { margin: 0 0 20px; font-size: 1.5rem; }
+    .footer-contact { margin: 15px 0; line-height: 1.8; }
+    .footer-contact a { color: #c49b63; text-decoration: none; }
+    .footer-contact a:hover { text-decoration: underline; }
+    .social-links { margin: 20px 0; }
+    .social-links a { color: #c49b63; text-decoration: none; margin: 0 12px; font-weight: bold; }
+    .social-links a:hover { text-decoration: underline; }
+    .footer-bottom { margin-top: 30px; padding-top: 20px; border-top: 1px solid #333; font-size: 14px; opacity: 0.7; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Aurelia by Her</h1>
+    <p>Experience elegance and comfort in the heart of Kenya</p>
+  </div>
+
+  <div class="rooms">
+    <div class="room">
+      <img src="images/single-room.jpg" alt="Single Room">
+      <div class="room-info">
+        <h3>Single Room</h3>
+        <p>Cozy and modern room perfect for solo travelers. Includes free WiFi, ensuite bathroom, and workspace.</p>
+        <p class="price">KES 8,500 / night</p>
+        <a href="https://wa.me/254114894760?text=Hi%20Aurelia%20by%20Her,%20I%20want%20to%20book%20the%20Single%20Room" class="book-room-btn" target="_blank">
+          Book Now on WhatsApp
+        </a>
+      </div>
+    </div>
+    
+    <div class="room">
+      <img src="images/double-room.jpg" alt="Double Room">
+      <div class="room-info">
+        <h3>Double Room</h3>
+        <p>Spacious room with queen bed, ideal for couples. Includes balcony, minibar, and complimentary breakfast.</p>
+        <p class="price">KES 12,000 / night</p>
+        <a href="https://wa.me/254114894760?text=Hi%20Aurelia%20by%20Her,%20I%20want%20to%20book%20the%20Double%20Room" class="book-room-btn" target="_blank">
+          Book Now on WhatsApp
+        </a>
+      </div>
+    </div>
+    
+    <div class="room">
+      <img src="images/suitliving-room.jpg" alt="Suite">
+      <div class="room-info">
+        <h3>Suite</h3>
+        <p>Luxurious suite with separate lounge, king bed, and premium amenities. Perfect for an elevated stay.</p>
+        <p class="price">KES 18,500 / night</p>
+        <a href="https://wa.me/254114894760?text=Hi%20Aurelia%20by%20Her,%20I%20want%20to%20book%20the%20Suite" class="book-room-btn" target="_blank">
+          Book Now on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <div class="divider">— OR —</div>
+
+  <div class="booking">
+    <h2>Send Booking Request</h2>
+    <p>Fill this form and we’ll email you to confirm</p>
+    <form name="booking" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="booking">
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="email" name="email" placeholder="Email Address" required>
+      <input type="tel" name="phone" placeholder="Phone Number" required>
+      <select name="room" required>
+        <option value="">Select Room Type</option>
+        <option value="Single Room">Single Room - KES 8,500</option>
+        <option value="Double Room">Double Room - KES 12,000</option>
+        <option value="Suite">Suite - KES 18,500</option>
+      </select>
+      <input type="date" name="checkin" required>
+      <input type="date" name="checkout" required>
+      <button type="submit">Submit Booking Request</button>
+    </form>
+  </div>
+
+  <div class="divider">— OR —</div>
+
+  <div class="contact-options">
+    <h2>No WhatsApp? Call Us Directly</h2>
+    <p>Speak to our team for instant booking</p>
+    <a href="tel:+254706872874" class="call-btn">
+      Call: 0706 872 874
+    </a>
+  </div>
+
+  <div class="footer">
+    <h3>Aurelia by Her</h3>
+    <div class="footer-contact">
+      <p>
+        <strong>WhatsApp:</strong> <a href="https://wa.me/254114894760" target="_blank">0114 894 760</a><br>
+        <strong>Call:</strong> <a href="tel:+254706872874">0706 872 874</a><br>
+        <strong>Email:</strong> <a href="mailto:ruthkwambosh7@gmail.com">ruthkwambosh7@gmail.com</a>
+      </p>
+      <p>Moi, Nairobi Area, Kenya</p>
+    </div>
+    <div class="social-links">
+      <a href="https://facebook.com/itz.her.991736/" target="_blank">Facebook</a>
+      <a href="https://instagram.com/itzkwamboqs" target="_blank">Instagram</a>
+      <a href="https://tiktok.com/@itz.her270" target="_blank">TikTok</a>
+    </div>
+    <div class="footer-bottom">
+      © 2026 Aurelia by Her. All rights reserved.
+    </div>
+  </div>
+
+</body>
+</html>
