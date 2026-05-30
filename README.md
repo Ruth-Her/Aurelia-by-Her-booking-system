@@ -2,7 +2,7 @@
 
 Responsive hotel booking website for boutique hotels in Kenya. Browse rooms, view KES pricing, and book directly via WhatsApp.
 
-Live Demo: Coming soon  
+Live Demo: https://aureliabyitzher.netlify.app/
 Tech Stack: HTML, CSS, JavaScript
 
  Features
